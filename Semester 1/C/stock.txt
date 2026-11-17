@@ -1,0 +1,10 @@
+P01,Milk,1L,1200.00,50
+P02,Bread,500g,600.00,30
+P03,Eggs,Crate,2500.00,20
+P04,Rice,1kg,1500.00,38
+P05,Beans,1kg,1100.00,35
+P06,Sugar,500g,400.00,60
+P07,Salt,250g,250.00,100
+P08,Water,75cl,200.00,110
+P09,Noodles,Pack,350.00,80
+P10,Tomato,Tin,300.00,45
