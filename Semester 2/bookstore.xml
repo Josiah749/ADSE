@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore (book+)>
+  <!ELEMENT book (title, author, year, price)>
+  <!ATTLIST book category CDATA #IMPLIED>
+  <!ELEMENT title (#PCDATA)>
+  <!ATTLIST title lang CDATA #IMPLIED>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+  <book id="001" category="Fiction">
+    <title lang="en">The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <year>1925</year>
+    <price>14.99</price>
+  </book>
+  <book id="002" category="Technology">
+    <title lang="en">Learning XML &amp; XPath</title>
+    <author>Jane Doe</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+  <book id="003" category="History">
+    <title lang="en">A History of Tomorrow</title>
+    <author>John Smith</author>
+    <year>1988</year>
+    <price>24.99</price>
+  </book>
+</bookstore>
