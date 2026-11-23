@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookstore [
-  <!ELEMENT bookstore (book+)>
-  <!ELEMENT book (title, author, year, price)>
-  <!ATTLIST book category CDATA #IMPLIED>
-  <!ELEMENT title (#PCDATA)>
-  <!ATTLIST title lang CDATA #IMPLIED>
-  <!ELEMENT author (#PCDATA)>
-  <!ELEMENT year (#PCDATA)>
-  <!ELEMENT price (#PCDATA)>
-]>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
 <bookstore>
   <book id="001" category="Fiction">
     <title lang="en">The Great Gatsby</title>
