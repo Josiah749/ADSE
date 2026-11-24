@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE campusPolice SYSTEM "squad_roster.dtd">
+<campusPolice>
+    <squad squadId="SQ01">
+        <zone>North Dormitories</zone>
+        <shift>Night</shift>
+        <patrolCar>UNIT-12</patrolCar>
+
+        <officer badge="CP104">
+            <name>James Carter</name>
+            <rank>Sergeant</rank>
+        </officer>
+
+        <officer badge="CP105">
+            <name>Maria Lopez</name>
+            <rank>Officer</rank>
+        </officer>
+    </squad>
+
+    <squad squadId="SQ02">
+        <zone>Science Quad</zone>
+        <shift>Day</shift>
+        <patrolCar>UNIT-07</patrolCar>
+
+        <officer badge="CP201">
+            <name>David Brown</name>
+            <rank>Captain</rank>
+        </officer>
+
+        <officer badge="CP202">
+            <name>Sarah Johnson</name>
+            <rank>Officer</rank>
+        </officer>
+    </squad>
+</campusPolice>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root Element -->
+    <xs:element name="campusPolice">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="squad" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="zone" type="xs:string"/>
+
+                            <xs:element name="shift">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Day"/>
+                                        <xs:enumeration value="Swing"/>
+                                        <xs:enumeration value="Night"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="patrolCar">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="UNIT-[0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="officer"
+                                        minOccurs="1"
+                                        maxOccurs="4">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name"
+                                                    type="xs:string"/>
+                                        <xs:element name="rank"
+                                                    type="xs:string"/>
+                                    </xs:sequence>
+
+                                    <xs:attribute name="badge"
+                                                  use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="CP[0-9]{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="squadId"
+                                      use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="SQ[0-9]{2}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,15 @@
+<!ELEMENT campusPolice (squad+)>
+
+    <!ELEMENT squad (zone, shift, patrolCar, officer+)>
+    <!ATTLIST squad
+        squadId ID #REQUIRED>
+
+    <!ELEMENT officer (name, rank)>
+    <!ATTLIST officer
+        badge ID #REQUIRED>
+
+    <!ELEMENT zone (#PCDATA)>
+    <!ELEMENT shift (#PCDATA)>
+    <!ELEMENT patrolCar (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT rank (#PCDATA)>
