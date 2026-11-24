@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE campusPolice SYSTEM "squad_roster.dtd">
-<campusPolice>
+
+
+<campusPolice
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="squad_roster.xsd">
+
+
     <squad squadId="SQ01">
         <zone>North Dormitories</zone>
         <shift>Night</shift>
